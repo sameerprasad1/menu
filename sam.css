@@ -1,0 +1,153 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+    .bg-color{
+        border: 2px solid black;
+        height: 100vh; /* Full viewport height */
+        background-image: url('https://barista.lk/wp-content/uploads/2024/04/Website-banner-1.png'); /* Path to your image */
+        background-size: cover; /* Cover the entire div */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: center;   
+    height: 100vh;         
+    background-color: #DC4D01;
+    overflow: auto; 
+    position: relative;
+    }
+    .responsive-image {
+        margin:auto;
+        width: 500px;  
+        height: 300px; 
+        flex: 40%;
+        max-width: 500px; 
+        max-height: 300px; 
+        border: 2px solid #ccc; 
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .heading{
+            background-color: #ffffff; 
+            padding: 20px; 
+            text-align: center;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family:Lato; 
+    }
+
+
+    .price {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .item{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    .item:hover .price{
+        opacity: 1;
+    }
+    .item img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .item:hover  img {
+        transform: scale(1.1);
+    }
+    .item:hover {
+        transform: scale(1.05);
+    }
+    
+    .item {
+        position: relative;
+        overflow: hidden;
+    }
+
+
+
+
+
+    .btnv, .abtnv {
+        font-family: Arial, sans-serif;
+        font-size: 75 px;
+        font-weight: bold;
+        color : black;
+        list-style-type:none;
+       
+    }
+    .nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .bt{
+        padding: 7px;
+        margin:  2% 15px;
+        position: relative;
+        border: none;
+        transition: 0.09S ease-in;
+        z-index: 1;
+        background-color:#DC4D01;
+        border-radius: 50pt;
+        font-family: Arial, sans-serif;
+        font-size: 15.6px;
+        font-weight: bold;
+        color : black;
+        float: right;
+     
+    }
+    .bt::before,
+    .bt::after{
+        position: absolute;
+        content: " ";
+        z-index: 1;
+    }
+    .bt:hover {
+        box-shadow: 5px 3px 0px #FEEEAB;
+        top: 5px;
+        right: -5px;
+        color:#FEEEAB;
+        cursor: pointer;
+    
+    }
+    .navigation{
+        background-color: #DC4D01 ;
+        height: 50px;    
+    }
+    #na{
+        padding: 10px;
+        float:left;
+        list-style-type:none;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    } 
+    #na:hover {
+        color:#f6ca06;
+        cursor: pointer;
+    
+    }
